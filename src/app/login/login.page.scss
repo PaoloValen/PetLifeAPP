@@ -1,0 +1,23 @@
+ion-content.background {
+    --background: url('../../images/1.jpg') 0 0/ 100%;
+    height: 100%;
+}
+
+ion-card {
+    background-color: rgba(235, 255, 255, 0.7) !important;
+}
+
+ion-card.center-login {
+    width: 80%;
+    margin: auto;
+    margin-top: 280px;
+}
+
+ion-content {
+    --keyboard-offset: 0 !important;
+}
+
+.card-item-custom {
+    padding: 20px;
+}
+

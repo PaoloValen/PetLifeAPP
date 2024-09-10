@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      Pedir Hora
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="centered-container">
+    <ion-label>
+      Tu nombre es: {{ user }}
+    </ion-label>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <nav class="nav-custom">
+    <ion-button expand="full" (click)="linkHome()">Home</ion-button>
+    <ion-button expand="full" (click)="linkMascostas()">Mis Mascostas</ion-button>
+    <ion-button expand="full" (click)="linkPedirHora()">Pedir Hora</ion-button>
+    <ion-button expand="full" (click)="cerrarSesion()">Cerrar sesión</ion-button>
+  </nav>
+</ion-footer>
