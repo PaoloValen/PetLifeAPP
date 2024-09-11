@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 
 export class SessionManager {
 
-    private readonly temporaryUserName: string = 'user';
-    private readonly temporaryPass: string = 'pass';
+    private readonly temporaryUserName: string = 'abi';
+    private readonly temporaryPass: string = '123';
 
     performLogin(user: string, password: string): boolean {
         if(user == this.temporaryUserName && password == this.temporaryPass) {
