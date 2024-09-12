@@ -6,19 +6,54 @@
     </ion-buttons>
 
     <ion-title>
-      Pedir Hora
+      Pide tu hora
     </ion-title>
   </ion-toolbar>
 </ion-header> 
 
 
-<ion-content [fullscreen]="true">
-  <div class="centered-container">
-    <ion-label>
-      Tu nombre es: {{ user }}
-    </ion-label>
-  </div>
-</ion-content>
+
+  <ion-content [fullscreen]="true" class="fondo-custom">
+    <ion-card class="fondo-custom">
+
+      <ion-list [inset]="true">
+
+        <ion-item>
+          <ion-input label="Nombre"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Apellido"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Celular"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-input label="Horario"></ion-input>
+          <ion-datetime-button datetime="datetime"></ion-datetime-button>
+            <ion-modal [keepContentsMounted]="true">
+              <ng-template>
+                <ion-datetime id="datetime"></ion-datetime>
+              </ng-template>
+            </ion-modal>
+        </ion-item>
+
+          <ion-item>
+            <ion-select label="Seleccione su mascota" placeholder="">
+              <ion-select-option value="">Cloy</ion-select-option>
+              <ion-select-option value="nes">Pelusa</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-textarea label="Motivo"  rows="5"></ion-textarea>
+          </ion-item>
+        </ion-list>
+        <ion-button class="buttom-custom"  (click)="presentAlert()">Confirmar</ion-button>
+    </ion-card>
+  </ion-content>
 
 <ion-footer>
   <nav class="nav-custom">

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { SessionManager } from '../../managers/SessionManager';
 import { ActivatedRoute } from '@angular/router';
+import { addIcons } from 'ionicons';
+import { pin, share, trash } from 'ionicons/icons';
 
 @Component({
   selector: 'app-mismascotas',
@@ -11,13 +13,14 @@ import { ActivatedRoute } from '@angular/router';
 export class MismascotasPage {
 
   constructor(private route: ActivatedRoute, private router: Router, private sessionManager: SessionManager) { }
-
+  
   user: string = '';
 
   ngOnInit() {
     this.route.queryParams.subscribe(params => {
       this.user = params['user'] || '';
     });
+    
   }
 
   cerrarSesion() {
@@ -32,5 +35,8 @@ export class MismascotasPage {
   linkPedirHora() {
     this.router.navigate(['/pedirhora'], { queryParams: { user: this.user } });
   }
+  
 
 }
+
+

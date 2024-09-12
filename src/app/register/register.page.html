@@ -1,13 +1,46 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>register</ion-title>
+
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-title>
+      Register
+    </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">register</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="fondo-custom">
+  <ion-card>
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-input label="Nombres"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Apellidos"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Correo"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Celular"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list [inset]="true">
+    <ion-item>
+      <ion-select label="Seleccionar" placeholder="Tipo de mascota">
+        <ion-select-option value="">Gato</ion-select-option>
+        <ion-select-option value="nes">Perro</ion-select-option>
+        <ion-select-option value="n64">Animal Exotico</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-textarea label="Descripcion"  rows="5"></ion-textarea>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" size="small" Small (click)="linkLogin()" >Registrarse</ion-button>
+  </ion-card> 
 </ion-content>

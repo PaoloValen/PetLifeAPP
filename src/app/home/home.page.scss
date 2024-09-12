@@ -30,3 +30,10 @@
   display: flex;
   justify-content: center;
 }
+.fondo-custom{
+  --background: url('../../images/petlifereg.jpg') 0 0/ 115% !important;
+  height: 100%;
+}
+.qr-custom{
+  --background: url('../../images/qr.jpg')0 0/ 15% !important;
+}

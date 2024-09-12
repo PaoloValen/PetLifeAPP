@@ -26,6 +26,8 @@ export class LoginPage implements OnInit {
       alert('Las credenciales ingresadas son inválidas.')
     }
   }
-
+  linkRegister() {
+    this.router.navigate(['/register'],  );
+  }
 
 }

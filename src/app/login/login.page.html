@@ -1,6 +1,6 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title> Login </ion-title>
+<ion-header class="top">
+  <ion-toolbar class="top">
+    <ion-title> Bienvenido a PETLIFE </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,12 +10,13 @@
   <ion-card class="center-login">
     <ion-card-header>
       <ion-title>Iniciar Sesion</ion-title>
+      
     </ion-card-header>
     
       <div class="card-item-custom">
         <!-- Usamos ngModel para indicarle al input el objeto a utilizar-->
         <ion-label position="floating">Usuario</ion-label>
-        <ion-input type="text" [(ngModel)]="user" minlength="3" maxlength="8"></ion-input>
+        <ion-input type="text" [(ngModel)]="user" minlength="3" maxlength="20"></ion-input>
       </div>
       
       <div class="card-item-custom">
@@ -27,7 +28,8 @@
       <ion-row>
         <ion-col>
           <!-- Indicamos mediante el (click) la funcion a quien referenciara-->
-          <ion-button expand="full"  (click)="onLoginButtonPressed()" >Ingresar</ion-button>
+          <ion-button expand="block" size="small" Small (click)="onLoginButtonPressed()" >Ingresar</ion-button>
+          <ion-button expand="block" size="small"Small (click)="linkRegister()" >Registrarse</ion-button>
         </ion-col>
       </ion-row>
     

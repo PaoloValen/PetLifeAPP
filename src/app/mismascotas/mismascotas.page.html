@@ -13,12 +13,48 @@
 
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <div class="centered-container">
-    <ion-label>
-      Tu nombre es: {{ user }}
-    </ion-label>
-  </div>
+<ion-content [fullscreen]="true" class="fondo-custom" >
+    <ion-list [inset]="true"class="top-custom">
+      <ion-item-sliding>
+        <ion-item [button]="true">
+          <ion-avatar aria-hidden="true" slot="start">
+            <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label>Cloy</ion-label>
+        </ion-item>
+        <ion-item-options slot="end">
+          <ion-item-option color="warning">
+            <ion-icon slot="icon-only" name="pin"></ion-icon>
+          </ion-item-option>
+          <ion-item-option color="tertiary">
+            <ion-icon slot="icon-only" name="share"></ion-icon>
+          </ion-item-option>
+          <ion-item-option color="danger" expandable="true">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+      <ion-item-sliding>
+        <ion-item [button]="true">
+          <ion-avatar aria-hidden="true" slot="start">
+            <img alt="" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+          <ion-label>Pelusa</ion-label>
+        </ion-item>
+        <ion-item-options slot="end">
+          <ion-item-option color="warning">
+            <ion-icon slot="icon-only" name="pin"></ion-icon>
+          </ion-item-option>
+          <ion-item-option color="tertiary">
+            <ion-icon slot="icon-only" name="share"></ion-icon>
+          </ion-item-option>
+          <ion-item-option color="danger" expandable="true">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+
 </ion-content>
 
 <ion-footer>

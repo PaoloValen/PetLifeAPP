@@ -2,3 +2,11 @@
     display: flex;
     justify-content: center;
   }
+.fondo-custom{
+    --background: url('../../images/petlifereg.jpg') 0 0/ 100%;
+    height: 100%;
+}
+.top-custom{
+  margin-top: 180px;
+  background-color: rgba(235, 255, 255, 0.7) !important;
+}
